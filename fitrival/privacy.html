@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FitRival privacy policy</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #1a1a2e 0%, #0c0c18 100%);
+      color: #e8e8f0;
+      margin: 0;
+      min-height: 100vh;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+    h1 { font-size: 28px; margin-top: 0; }
+    h2 { font-size: 20px; margin-top: 36px; color: #00bcd4; }
+    p, li { line-height: 1.65; color: #c5c5d4; }
+    a { color: #00bcd4; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #2c2c44;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th { color: #00bcd4; }
+    .last-updated { color: #686878; font-size: 12px; }
+    .back { display: inline-block; margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">← Back to FitRival</a>
+    <h1>FitRival privacy policy</h1>
+    <div class="last-updated">Last updated: 2026-05-16</div>
+
+    <p>
+      FitRival ("the app") is published by Sage Arbor (the "Developer").
+      This policy describes what data the app collects, where it goes, and
+      how to delete it.
+    </p>
+
+    <h2>Data collected</h2>
+    <p>
+      The app collects the following data <strong>only when you actively
+      enter it</strong>:
+    </p>
+    <table>
+      <thead>
+        <tr><th>Type</th><th>Examples</th><th>Stored where</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Body measurements</td>
+          <td>weight (kg), body-fat %, date, notes</td>
+          <td>On your device (Hive) + the developer's Google Sheet only if
+              you enable cloud sync for a group</td>
+        </tr>
+        <tr>
+          <td>Goals</td>
+          <td>target weight, target body-fat %, target date</td>
+          <td>Same as above</td>
+        </tr>
+        <tr>
+          <td>Friend records</td>
+          <td>names + optional email + optional phone</td>
+          <td>On your device only — friend records are not uploaded</td>
+        </tr>
+        <tr>
+          <td>Workouts</td>
+          <td>exercise names, set reps/weights, durations, notes</td>
+          <td>On your device only</td>
+        </tr>
+        <tr>
+          <td>Apple Health / Health Connect imports</td>
+          <td>weight + body-fat % imported with explicit OS permission</td>
+          <td>Same path as manual entries above</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      The app does <strong>not</strong> collect: IP addresses, device
+      identifiers, advertising IDs, location, contacts in bulk, photos, or
+      any analytics events.
+    </p>
+
+    <h2>Cloud sync (opt-in, per-group)</h2>
+    <p>
+      When you press "Enable cloud sync" on a group (or paste a friend's
+      join code), that group's body measurements and goals are written to
+      a Google Sheet owned by the Developer. Rows for different groups are
+      isolated by per-group <strong>capability tokens</strong> — a secret
+      paired with each group's ID. The Sheet's contents are not visible to
+      anyone who does not possess a given group's join code.
+    </p>
+    <p>
+      You can disable cloud sync for a group at any time via the "Unlink"
+      action. Disabling stops further pushes/pulls but does not delete the
+      rows already in the Sheet — see Deletion below.
+    </p>
+
+    <h2>Sharing</h2>
+    <p>
+      The Developer does not sell or share your data with third parties.
+      The Google Sheet that holds cloud-synced data is hosted on Google
+      Drive under the Developer's Google account; access is restricted to
+      the Developer and to anyone who holds your group's join code.
+    </p>
+
+    <h2>Deletion</h2>
+    <ul>
+      <li><strong>On-device data:</strong> uninstall the app from your
+          phone or desktop. All Hive data is removed with the app.</li>
+      <li><strong>Cloud-synced data:</strong> email
+          <a href="mailto:sophie.arborbot@gmail.com">sophie.arborbot@gmail.com</a>
+          with the join code(s) of the group(s) you want to remove. The
+          Developer will delete the matching rows within 14 days.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>
+      FitRival is not intended for children under 13. Do not use it if you
+      are under 13.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      Material changes to this policy will be reflected in the "Last
+      updated" date above and noted in the App Store / Play Store
+      changelog.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions:
+      <a href="mailto:sophie.arborbot@gmail.com">sophie.arborbot@gmail.com</a>
+    </p>
+  </main>
+</body>
+</html>
