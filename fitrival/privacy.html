@@ -43,7 +43,7 @@
   <main>
     <a class="back" href="index.html">← Back to FitRival</a>
     <h1>FitRival privacy policy</h1>
-    <div class="last-updated">Last updated: 2026-05-16</div>
+    <div class="last-updated">Last updated: 2026-06-11</div>
 
     <p>
       FitRival ("the app") is published by Sage Arbor (the "Developer").
@@ -87,20 +87,62 @@
           <td>weight + body-fat % imported with explicit OS permission</td>
           <td>Same path as manual entries above</td>
         </tr>
+        <tr>
+          <td>Challenge posts</td>
+          <td>a number (e.g. miles, reps), optional caption, optional small
+              photo thumbnail, optional photo/video link, optional location
+              (see below)</td>
+          <td>On your device + the developer's Google Sheet for the group
+              running the challenge</td>
+        </tr>
+        <tr>
+          <td>Profile photo (optional)</td>
+          <td>a small avatar you take or pick when you tap "Set my photo"</td>
+          <td>On your device + the developer's Google Sheet for groups you
+              sync with</td>
+        </tr>
       </tbody>
     </table>
 
     <p>
       The app does <strong>not</strong> collect: IP addresses, device
-      identifiers, advertising IDs, location, contacts in bulk, photos, or
-      any analytics events.
+      identifiers, advertising IDs, contacts in bulk, or any analytics
+      events. Photos and location are collected <strong>only</strong> for
+      the specific post or avatar you attach them to — never scanned from
+      your library, never tracked in the background.
+    </p>
+
+    <h2>Location on challenge posts (opt-in, per post)</h2>
+    <p>
+      When you log a challenge update you can tap <strong>"Add
+      location"</strong> to put the post on the group's map. This is
+      entirely optional, decided per post:
+    </p>
+    <ul>
+      <li>Nothing is attached unless you open the location picker and tap
+          <strong>Use</strong>.</li>
+      <li>By default the shared coordinate is <strong>approximate</strong> —
+          rounded to roughly 1&nbsp;km, so the post shows the neighborhood,
+          not an address.</li>
+      <li>A <strong>precise</strong> spot is shared only if you switch on
+          <strong>"Exact pin"</strong> in the picker.</li>
+      <li>The app never reads your location in the background, and never
+          attaches it to a post automatically.</li>
+    </ul>
+    <p>
+      A post's location is visible to the members of that group (it syncs
+      through the same Google Sheet as the rest of the challenge feed).
+      Deleting the post in the app deletes its location from the Sheet as
+      well.
     </p>
 
     <h2>Cloud sync (opt-in, per-group)</h2>
     <p>
       When you press "Enable cloud sync" on a group (or paste a friend's
-      join code), that group's body measurements and goals are written to
-      a Google Sheet owned by the Developer. Rows for different groups are
+      join code), that group's body measurements, goals, and challenge
+      activity (posts, scores, reactions, avatars — including any photo
+      thumbnails and opt-in locations on posts) are written to a Google
+      Sheet owned by the Developer. Rows for different groups are
       isolated by per-group <strong>capability tokens</strong> — a secret
       paired with each group's ID. The Sheet's contents are not visible to
       anyone who does not possess a given group's join code.
