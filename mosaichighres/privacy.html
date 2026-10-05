@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mosaic HighRes privacy policy</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #1a1a2e 0%, #0c0c18 100%);
+      color: #e8e8f0;
+      margin: 0;
+      min-height: 100vh;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+    h1 { font-size: 28px; margin-top: 0; }
+    h2 { font-size: 20px; margin-top: 36px; color: #00bcd4; }
+    p, li { line-height: 1.65; color: #c5c5d4; }
+    a { color: #00bcd4; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #2c2c44;
+      text-align: left;
+      vertical-align: top;
+      font-size: 14px;
+    }
+    th { color: #00bcd4; }
+    .last-updated { color: #686878; font-size: 12px; }
+    .back { display: inline-block; margin-bottom: 24px; }
+    .callout {
+      border: 1px solid #2c2c44;
+      border-radius: 6px;
+      padding: 14px 16px;
+      margin: 16px 0;
+      background: rgba(0,188,212,0.06);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="index.html">← Back to Mosaic HighRes</a>
+    <h1>Mosaic HighRes privacy policy</h1>
+    <div class="last-updated">Last updated: 2026-10-05</div>
+
+    <p>
+      Mosaic HighRes ("the app") is published by Sage Arbor (the
+      "Developer"). This policy describes what the app does with your
+      data — in short: everything happens on your device, and nothing is
+      ever sent anywhere.
+    </p>
+
+    <div class="callout">
+      <strong>There is no server.</strong> Mosaic HighRes has no backend,
+      no account system, and no analytics. The app was built this way on
+      purpose and that is not going to change.
+    </div>
+
+    <h2>Data the app accesses</h2>
+    <table>
+      <thead>
+        <tr><th>What</th><th>Why</th><th>Leaves the device?</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Your photo library (read access)</td>
+          <td>To let you pick a "target" photo and a pool of photos used
+              as mosaic tiles</td>
+          <td>Never</td>
+        </tr>
+        <tr>
+          <td>The mosaic image the app builds</td>
+          <td>The whole point of the app — a new image file assembled
+              from tiles of your pool photos</td>
+          <td>Never, unless <em>you</em> explicitly tap Share and pick a
+              destination (e.g. Messages, email, Google Photos) — that is
+              the normal Android/iOS share sheet handing the file to an
+              app of your choice, not Mosaic HighRes uploading it
+              anywhere itself</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      On Android, the app requests the standard photo-library permissions
+      (<code>READ_MEDIA_IMAGES</code>, or the Android 14+ "select photos"
+      flow) and nothing broader. On iOS it requests Photos access through
+      the standard system picker.
+    </p>
+
+    <h2>What the app does NOT do</h2>
+    <ul>
+      <li>No account, no sign-up, no login — there is nothing to create
+          and nothing to log into.</li>
+      <li>No analytics, no crash reporting that leaves the device, no
+          advertising SDKs, no trackers of any kind.</li>
+      <li>No photo, thumbnail, or rendered mosaic is ever uploaded,
+          synced, or transmitted over the network by the app.</li>
+      <li>No device identifiers, advertising IDs, or location data are
+          collected.</li>
+    </ul>
+
+    <h2>The one network request the app can make</h2>
+    <p>
+      The Support screen has an optional "Tip $5 on Venmo" button. Tapping
+      it opens Venmo (or your browser, if Venmo isn't installed) to the
+      Developer's public tip page — this is the <strong>only</strong>
+      circumstance under which the app causes any network request, and it
+      only happens if you deliberately tap that button. The rest of the
+      app — picking photos, building the mosaic, saving or sharing the
+      result — works identically with no network connection at all.
+    </p>
+
+    <h2>Where exported files go</h2>
+    <p>
+      When you tap "Save to Photos," the finished mosaic is written to
+      your device's own photo library, using the standard OS save APIs —
+      the same place any photo you take goes. When you tap "Share," the
+      operating system's normal share sheet opens and the file goes
+      wherever <em>you</em> pick (a message, an email, another app). The
+      Developer has no visibility into, and no copy of, anything you
+      export.
+    </p>
+
+    <h2>Data retention and deletion</h2>
+    <p>
+      Nothing is stored anywhere except on your own device, so there is
+      nothing for the Developer to retain or delete. Uninstalling the app
+      removes everything the app itself created (its project data, cached
+      thumbnails, and any exports saved inside the app's own storage).
+      Exports you explicitly saved to your photo library or shared
+      elsewhere are yours to manage like any other file — the app has no
+      way to reach back and delete them, and does not try to.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      Mosaic HighRes is not directed at children under 13 and does not
+      knowingly collect any data from anyone, child or adult — see above.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      Material changes to this policy will be reflected in the "Last
+      updated" date above and noted in the Play Store listing's changelog.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions:
+      <a href="mailto:sophie.arborbot@gmail.com">sophie.arborbot@gmail.com</a>
+    </p>
+  </main>
+</body>
+</html>
