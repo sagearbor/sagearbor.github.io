@@ -55,14 +55,15 @@
     <p>
       Mosaic HighRes ("the app") is published by Sage Arbor (the
       "Developer"). This policy describes what the app does with your
-      data — in short: everything happens on your device, and nothing is
-      ever sent anywhere.
+      data — in short: everything happens on your device, and no photo or
+      mosaic of yours is ever uploaded anywhere. The one opt-in exception
+      (importing an album <em>from</em> Google Photos) is described below.
     </p>
 
     <div class="callout">
-      <strong>There is no server.</strong> Mosaic HighRes has no backend,
-      no account system, and no analytics. The app was built this way on
-      purpose and that is not going to change.
+      <strong>There is no server of its own.</strong> Mosaic HighRes has no
+      backend, no account system of its own, and no analytics. The app was
+      built this way on purpose and that is not going to change.
     </div>
 
     <h2>Data the app accesses</h2>
@@ -76,6 +77,17 @@
           <td>To let you pick a "target" photo and a pool of photos used
               as mosaic tiles</td>
           <td>Never</td>
+        </tr>
+        <tr>
+          <td>Photos from a Google Photos album (optional, read-only)</td>
+          <td>Only if you tap "Import a Google Photos album": the app
+              signs you in to Google and downloads the photos you choose in
+              Google's own picker, so they can be used as tiles</td>
+          <td>Nothing leaves the device. Photos come <em>down</em> from
+              Google to your phone. The app sends Google only the
+              sign-in token Google issued and the IDs of the photos you
+              picked, holds that token in memory for the import, and stores
+              no account details</td>
         </tr>
         <tr>
           <td>The mosaic image the app builds</td>
@@ -99,8 +111,11 @@
 
     <h2>What the app does NOT do</h2>
     <ul>
-      <li>No account, no sign-up, no login — there is nothing to create
-          and nothing to log into.</li>
+      <li>No account, no sign-up, no login of its own. The optional Google
+          Photos import uses your existing Google account through Google's
+          standard sign-in, asks for read-only access to only the photos you
+          pick, and can be revoked at any time at
+          <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
       <li>No analytics, no crash reporting that leaves the device, no
           advertising SDKs, no trackers of any kind.</li>
       <li>No photo, thumbnail, or rendered mosaic is ever uploaded,
@@ -109,15 +124,29 @@
           collected.</li>
     </ul>
 
-    <h2>The one network request the app can make</h2>
+    <h2>The only network use, and both are opt-in</h2>
     <p>
-      The Support screen has an optional "Tip $5 on Venmo" button. Tapping
-      it opens Venmo (or your browser, if Venmo isn't installed) to the
-      Developer's public tip page — this is the <strong>only</strong>
-      circumstance under which the app causes any network request, and it
-      only happens if you deliberately tap that button. The rest of the
-      app — picking photos, building the mosaic, saving or sharing the
-      result — works identically with no network connection at all.
+      <strong>Importing a Google Photos album.</strong> If you tap "Import a
+      Google Photos album," the app opens Google's standard sign-in and
+      Google's own photo picker (the Google Photos Picker API). The app then
+      downloads the photos you selected to your device. It requests
+      read-only access to just those photos, never your whole library; it
+      never uploads, modifies, or deletes anything in your Google Photos;
+      and it keeps no copy of your Google account details. The downloaded
+      photos live in the app's private storage on your device like any
+      other pool photo, and are removed when you remove them from the
+      project or uninstall the app. Google's handling of the sign-in itself
+      is governed by Google's privacy policy.
+    </p>
+    <p>
+      <strong>Tipping.</strong> The Support screen has an optional "Tip $5
+      on Venmo" button. Tapping it opens Venmo (or your browser) to the
+      Developer's public tip page.
+    </p>
+    <p>
+      Nothing else in the app touches the network. Picking photos from your
+      device, building the mosaic, and saving or sharing the result all
+      work identically with no network connection at all.
     </p>
 
     <h2>Where exported files go</h2>
